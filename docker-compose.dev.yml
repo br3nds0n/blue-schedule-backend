@@ -1,0 +1,16 @@
+version: '3.1'
+
+networks:
+  spring:
+    driver: bridge
+
+services:
+  data:
+    image: postgres
+    networks:
+      - spring
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_USER: "postgres"
+    ports:
+      - "5432:5432"

@@ -1,6 +1,4 @@
 FROM openjdk:11
-
-ADD target/api-docker.jar api-docker.jar
-
-ENTRYPOINT ["java", "-jar","api-docker.jar"]
+ADD target/user-docker.jar user-docker.jar
+ENTRYPOINT ["java", "-jar","user-docker.jar"]
 EXPOSE 8080
