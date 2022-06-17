@@ -1,6 +1,6 @@
-FROM adoptopenjdk:11-jre-hotspot
+FROM openjdk:11
 
-ARG JAR_FILE=*.jar
-COPY ${JAR_FILE} application.jar
+ADD target/api-docker.jar api-docker.jar
 
-ENTRYPOINT ["java", "-jar", "application.jar"]
+ENTRYPOINT ["java", "-jar","api-docker.jar"]
+EXPOSE 8080
