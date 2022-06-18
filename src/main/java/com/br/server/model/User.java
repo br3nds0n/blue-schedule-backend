@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.persistence.Table;
 
 @Entity
@@ -20,13 +21,16 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
+	@NotBlank
   @Column
   private String nome;
 
+	@NotBlank
   @Column
 	@Email
   private String email;
 
+	@NotBlank
   @Column
   private String telefone;
 

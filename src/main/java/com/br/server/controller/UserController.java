@@ -27,7 +27,7 @@ public class UserController {
   UserRepository userRepository;
 
   @PostMapping("/user")
-  public ResponseEntity<User> create(@RequestBody User user) {
+  public ResponseEntity<User> create(@Valid @RequestBody User user) {
     User newUser = userRepository.save(user);
 
     return new ResponseEntity<User>(newUser,HttpStatus.CREATED);
@@ -58,7 +58,7 @@ public class UserController {
       user.setNome(newUser.getNome());
       user.setEmail(newUser.getEmail());
       user.setTelefone(newUser.getTelefone());
-      
+
       this.userRepository.save(user);
 
       return new ResponseEntity<User>(user, HttpStatus.OK);
