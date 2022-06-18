@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.br.server.model.User;
 import com.br.server.repository.UserRepository;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping(value = "/api")
 public class UserController {
