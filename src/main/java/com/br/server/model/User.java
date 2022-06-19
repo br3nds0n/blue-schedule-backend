@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import javax.persistence.Table;
 
 @Entity
@@ -21,16 +22,17 @@ public class User implements Serializable {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 
-	@NotBlank
+	@NotBlank(message = "não pode ficar vazio")
   @Column
   private String nome;
 
-	@NotBlank
+	@NotBlank(message = "não pode ficar vazio")
   @Column
 	@Email
   private String email;
 
-	@NotBlank
+	@NotBlank(message = "não pode ficar vazio")
+	@Size(min = 15, max = 15, message = "deve ter 11 números (00) 00000-0000")
   @Column
   private String telefone;
 
