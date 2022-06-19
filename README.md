@@ -1,4 +1,4 @@
-# 📦 blue schedule backend [<img align="right" src="https://img.shields.io/badge/release-v1.0.2-green">](https://github.com/br3nds0n/blue-schedule-backend/releases)
+# 📦 blue schedule backend [<img align="right" src="https://img.shields.io/badge/release-v1.0.3-green">](https://github.com/br3nds0n/blue-schedule-backend/releases)
 
 Bem-vindo(a).
 
@@ -18,7 +18,8 @@ Venho por meio deste repositorio entregar a aplicação `back-end` do desafio. E
      * [starting](#-starting)
        * [docker](#-docker)
    * [📖 swagger](#-swagger)
-     * [documentação](#-documentação) 
+     * [documentação](#-documentação)
+   * [🌐 deploy](#-deploy)
    * [🛠 tecnologias](#-tecnologias)
    * [✍🏼 autor](#-autor)
    * [📝 license](#-license)
@@ -110,6 +111,12 @@ $ docker-compose up
 
 <br>
 
+## 🌐 Deploy 
+> Na fase de Deploy foi utilizada a ferramenta [Heroku](https://dashboard.heroku.com/), para fazer a hospedagem da nossa `API`.
+
+para ter acesso a api do blue. <br> use: <a>https://blue-backend-api.herokuapp.com/api/</a>.
+
+<br>
 
 ## 🛠 tecnologias
 
@@ -122,6 +129,7 @@ As seguintes ferramentas/tecnologias foram usadas na construção e teste do pro
 | <a href="https://pt-br.reactjs.org/" target="_blank"><img align="center" alt="maven" height="30" width="40" src="https://user-images.githubusercontent.com/82064724/168427904-8ca2ff98-2496-45bc-9747-9875009566b5.png"> | Maven |  `3.6.3`       |
 | <a href="https://www.postgresql.org/download/" target="_blank"><img align="center" alt="PostgreSQL" height="30" width="40" src="https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original.svg"></a>            | PostgreSQL                      |  `8.7.3`       |
 | <a href="https://www.docker.com/"><img align="center" alt="docker" height="50" width="40" src="https://github.com/devicons/devicon/blob/master/icons/docker/docker-original.svg"></a> | Docker | `1.27.4` |
+| <a href="https://dashboard.heroku.com/" target="_blank"><img align="center" alt="heroku" height="25" width="35" src="https://github.com/devicons/devicon/blob/master/icons/heroku/heroku-plain.svg"></a>|Heroku|`20.0.0`|
  
  
 <br>
