@@ -1,4 +1,4 @@
-# 📦 blue schedule backend [<img align="right" src="https://img.shields.io/badge/release-v1.0.0-green">](https://github.com/br3nds0n/blue-schedule-backend/releases)
+# 📦 blue schedule backend [<img align="right" src="https://img.shields.io/badge/release-v1.0.2-green">](https://github.com/br3nds0n/blue-schedule-backend/releases)
 
 Bem-vindo(a).
 
